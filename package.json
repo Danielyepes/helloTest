@@ -1,0 +1,21 @@
+{
+  "name": "hellotest",
+  "version": "1.0.0",
+  "description": "CRUD with node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.16"
+  },
+  "keywords": [
+    "test",
+    "project",
+    "crud"
+  ],
+  "author": "Daniel A. Yepes Ahumedo",
+  "license": "MIT"
+}
