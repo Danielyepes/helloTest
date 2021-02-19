@@ -1,13 +1,24 @@
 //Require Mongoose
+const { Double } = require('mongodb');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-//Define a schema
+//esquema de calificación
+var Calificacion = new Schema(
+    {
+        nombre: String,
+        correo: String,
+        valor: Number
+    });
+
+//Define el esquema de servicios
 var Service = new Schema({
     nombre: String,
-    description: String,
+    descripcion: String,
     codigo: String,
     valor: Number,
+    calificaciones: [Calificacion],
+    promedioCalificacion: Number
 
 },
     { versionKey: false },

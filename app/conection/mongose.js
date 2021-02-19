@@ -2,9 +2,9 @@
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
-var mongoDB ='mongodb+srv://MDBScrum:MDBScrum20@cluster0-zd4ie.gcp.mongodb.net/helloTest?retryWrites=true&w=majority';
+var mongoDB =' mongodb+srv://MDBScrum:MDBScrum20@cluster0.zd4ie.gcp.mongodb.net/helloTest?retryWrites=true&w=majority';
 
-mongoose.connect(mongoDB,  { useUnifiedTopology: true });
+mongoose.connect(mongoDB,  { useUnifiedTopology: true, useNewUrlParser: true });
 
 //Get the default connection
 var db = mongoose.connection;
